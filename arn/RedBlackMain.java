@@ -3,8 +3,12 @@ package arn;
 import java.util.Random;
 
 public class RedBlackMain {
-    public static final int SIZE = 1_000;
     RedBlackTree arn = new RedBlackTree();
+    public int SIZE;
+
+    public RedBlackMain(int SIZE) {
+        this.SIZE = SIZE;
+    }
 
     public void insertOne() {
         long startTime = System.currentTimeMillis();

@@ -5,8 +5,12 @@ import java.util.Random;
 import misc.Pessoa;
 
 public class AVLMain {
-    public static final int SIZE = 1_000;
     AVLTree<Pessoa> avl = new AVLTree<>();
+    public int SIZE;
+
+    public AVLMain(int SIZE) {
+        this.SIZE = SIZE;
+    }
 
     public void insertOne() {
         long startTime = System.currentTimeMillis();

@@ -3,8 +3,12 @@ package abb;
 import java.util.Random;
 
 public class BinarySearchMain {
-    public static final int SIZE = 1_000;
     BinarySearchTree abb = new BinarySearchTree();
+    public int SIZE;
+
+    public BinarySearchMain(int SIZE) {
+        this.SIZE = SIZE;
+    }
 
     public void insertOne() {
         long startTime = System.currentTimeMillis();
